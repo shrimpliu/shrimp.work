@@ -1,0 +1,21 @@
+{
+  "apps": [{
+    "name": "shrimp.work",
+    "script": "index.js",
+    "cwd": "/var/www/shrimp.work",
+    "exec_mode": "cluster",
+    "instances": 1,
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+      
+    },
+    "watch": ["index.js"],
+    "error_file": "./logs/pm2/shrimp.work-err.log",
+    "out_file": "./logs/pm2/shrimp.work-out.log",
+    "pid_file": "./pids/app.pid",
+    "merge_logs": false
+  }]
+}
