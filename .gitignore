@@ -1,1 +1,21 @@
+# webstorm project files
 .idea
+
+# custom configs
+config.js
+
+# running data
+/content/data/*
+/content/images/**/*
+/content/apps/*
+
+# logs
+/logs
+
+# npm packages
+node_modules
+
+# Built asset files
+/core/built
+/core/server/views/default.hbs
+/core/shared/ghost-url.min.js
