@@ -268,7 +268,7 @@ p>img, .mobile {
   left: -50px;
   position: absolute;
   z-index: -1;
-  display: none;
+  display: block;
 }
 
 .otherPost {
