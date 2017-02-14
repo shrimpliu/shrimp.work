@@ -1,0 +1,24 @@
+<div class="listBox">
+  {{#foreach posts}}
+    <a href="{{url}}">
+      <article href="{{url}}" class="listItem">
+        <div class="title">
+          <h5>
+            <img src="{{asset "./image/arrowR.png"}}" class="arrow">
+            <span>{{{title}}}</span>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <span>{{date format="YYYY-MM-DD"}}</span>
+          </h5>
+        </div>
+        <div class="preview">
+          <p>
+            {{excerpt characters="120"}}
+            <span>...</span>
+          </p>
+        </div>
+      </article>
+    </a>
+  {{/foreach}}
+</div>
+
+{{pagination}}

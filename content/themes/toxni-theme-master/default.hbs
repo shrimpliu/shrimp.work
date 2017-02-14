@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="apple-touch-icon" href="{{asset "./favicon.ico"}}">
+  <link rel="stylesheet" type="text/css" href="{{asset "./css/default.css"}}">
+  <link rel="stylesheet" type="text/css" href="{{asset "./css/prism.css"}}">
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+{{{body}}}
+<canvas id="cas" class="cas"></canvas>
+<script type="text/javascript" src="http://pv.sohu.com/cityjson"></script>
+
+{{ghost_foot}}
+<script type="text/javascript" src="{{asset "./js/prism.js"}}"></script>
+<script type="text/javascript" src="{{asset "./js/default.js"}}"></script>
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"shrimp6"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
+</body>
+</html>

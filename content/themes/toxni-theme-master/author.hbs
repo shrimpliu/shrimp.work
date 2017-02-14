@@ -1,0 +1,75 @@
+{{!< default}}
+<div class="indexBox" id="indexBox">
+  {{> "brief"}}
+  {{> "sideNav"}}
+
+  <div class="mobileOnly">
+    {{navigation}}
+  </div>
+  <!--userAgent-->
+  <div class="UA">
+    <div class="UABox">
+      <p class="userAgent">欢迎上车「</p>
+      <h4 id="ip"  class="userAgent"></h4>
+      <p class="userAgent">」</p>
+    </div>
+    <div class="UABox">
+      <p class="userAgent">我猜你在用「 </p>
+      <img src="" id="OSImg" class="userAgent">
+      <h4 id="OSBox" class="userAgent"></h4>
+      <p class="userAgent">&nbsp;-&nbsp;</p>
+      <img src="" id="BSImg" class="userAgent">
+      <h4 id="BSBox" class="userAgent"></h4>
+      <p class="userAgent">」</p>
+    </div>
+  </div>
+
+  <div class="PIFather">
+    <!--personal info-->
+    <div class="PI">
+      <blockquote>个人简介</blockquote>
+      <div id="PIBox" class="PIBox"></div>
+    </div>
+
+    <!--books-->
+    <div class="PI">
+      <blockquote>我的书单</blockquote>
+      <div id="bookBox" class="personalBox bookBox"></div>
+    </div>
+
+    <!--games-->
+    <div class="PI">
+      <blockquote>我的游戏收藏夹</blockquote>
+      <div id="gameBox" class="personalBox gameBox"></div>
+    </div>
+  </div>
+
+  <!--countDown-->
+  <div class="countDown">
+    <h3 id="countName"></h3>
+    <div class="countBlock">
+      <p class="day">0</p>
+      <p class="unit">Days</p>
+    </div>
+    <div class="countBlock">
+      <p class="hour">0</p>
+      <p class="unit">Hours</p>
+    </div>
+    <div class="countBlock">
+      <p class="minute">0</p>
+      <p class="unit">Minutes</p>
+    </div>
+    <div class="countBlock">
+      <p class="second">0</p>
+      <p class="unit">Seconds</p>
+    </div>
+  </div>
+
+  {{#author}}
+    <div class="portrait">
+      {{#if @blog.logo}}
+        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+      {{/if}}
+    </div>
+  {{/author}}
+</div>
