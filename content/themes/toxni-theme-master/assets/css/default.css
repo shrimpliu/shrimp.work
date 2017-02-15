@@ -120,15 +120,16 @@ p>img, .mobile {
 }
 
 .briefBox img {
-  width: 20px;
-  height: 20px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
+  margin-bottom: 20px;
 }
 
 .briefBox .blogTitle {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .briefBox .blogDescription {
