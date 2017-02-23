@@ -27,6 +27,7 @@ coreHelpers.is = require('./is');
 coreHelpers.has = require('./has');
 coreHelpers.meta_description = require('./meta_description');
 coreHelpers.meta_title = require('./meta_title');
+coreHelpers.meta_keywords = require('./meta_keywords');
 coreHelpers.navigation = require('./navigation');
 coreHelpers.pagination = require('./pagination');
 coreHelpers.plural = require('./plural');
@@ -103,6 +104,7 @@ registerHelpers = function (adminHbs) {
     registerThemeHelper('input_email', coreHelpers.input_email);
     registerThemeHelper('input_password', coreHelpers.input_password);
     registerThemeHelper('meta_description', coreHelpers.meta_description);
+    registerThemeHelper('meta_keywords', coreHelpers.meta_keywords);
     registerThemeHelper('meta_title', coreHelpers.meta_title);
     registerThemeHelper('navigation', coreHelpers.navigation);
     registerThemeHelper('page_url', coreHelpers.page_url);
