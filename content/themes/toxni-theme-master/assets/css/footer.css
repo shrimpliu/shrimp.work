@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+}
+
+.footer div {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.footer div span {
+    color: #357ca0;
+}
