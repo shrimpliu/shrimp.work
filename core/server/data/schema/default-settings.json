@@ -26,6 +26,9 @@
         "description": {
             "defaultValue": "Just a blogging platform."
         },
+        "keywords": {
+            "defaultValue": ""
+        },
         "logo": {
             "defaultValue": ""
         },

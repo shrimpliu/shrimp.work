@@ -8,6 +8,7 @@ export default Model.extend(ValidationEngine, {
 
     title: attr('string'),
     description: attr('string'),
+    keywords: attr('string'),
     logo: attr('string'),
     cover: attr('string'),
     defaultLang: attr('string'),

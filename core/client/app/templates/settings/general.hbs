@@ -18,14 +18,25 @@
                 {{/gh-form-group}}
 
                 {{#gh-form-group errors=model.errors hasValidated=model.hasValidated property="description" class="description-container"}}
-                    <label for="blog-description">Blog Description</label>
+                    <label for="blog-description">博客描述</label>
                     {{gh-textarea model.description id="blog-description" name="general[description]" focusOut=(action "validate" "description" target=model) update=(action (mut model.description))}}
                     {{gh-error-message errors=model.errors property="description"}}
                     <p>
-                        Describe what your blog is about
+                        博客相关内容描述
                         {{gh-count-characters model.description}}
                     </p>
                 {{/gh-form-group}}
+
+                {{#gh-form-group errors=model.errors hasValidated=model.hasValidated property="keywords" class="description-container"}}
+                    <label for="blog-keywords">关键词</label>
+                    {{gh-textarea model.keywords id="blog-keywords" name="general[keywords]" focusOut=(action "validate" "keywords" target=model) update=(action (mut model.keywords))}}
+                    {{gh-error-message errors=model.errors property="keywords"}}
+                    <p>
+                        关键词，用于SEO
+                        {{gh-count-characters model.keywords}}
+                    </p>
+                {{/gh-form-group}}
+
             </fieldset>
 
             <div class="form-group">
