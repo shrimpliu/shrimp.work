@@ -29,7 +29,7 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-	padding: 1em 1em 1em 3em;
+	padding: 1em 1em 1em 1em;
 	border-left: solid 3px #357ca0;
 	margin: 1em 0;
 	font-size: 0.85em;
@@ -38,7 +38,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: url("../image/preBG.png") repeat;
+	/*background: url("../image/preBG.png") repeat;*/
 }
 
 /* Inline code */
