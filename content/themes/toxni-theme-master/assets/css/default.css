@@ -39,8 +39,7 @@ li {
 }
 
 em {
-  margin: 20px;
-  display: block;
+  display: inline-block;
   color: #aaaaaa;
 }
 
@@ -430,7 +429,7 @@ p>img, .mobile {
   }
 
   pre {
-    padding-left: 1em;
+    #padding-left: 1em;
   }
 
   .mobileOnly {
