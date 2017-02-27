@@ -7,6 +7,9 @@
         <h1>{{title}}</h1>
         <section>
           <time datetime="{{date format="YYYY-MM-DD HH:mm:ss"}}">{{date format="YYYY-MM-DD HH:mm"}}</time>
+          <div class="post-tags">
+              <span>{{tags separator=", " prefix=""}}</span>
+          </div>
         </section>
       </header>
 
@@ -45,14 +48,14 @@
           <div class="prevPost">
             <a href="{{url}}">
               <img src="{{asset "./image/arrowL.png"}}" class="arrow">
-              <h5><span>Prev: </span>{{title}}</h5>
+              <h5><span>上一篇: </span>{{title}}</h5>
             </a>
           </div>
         {{/next_post}}
         {{#prev_post}}
           <div class="nextPost">
             <a href="{{url}}">
-              <h5><span>Next: </span>{{title}}</h5>
+              <h5><span>下一篇: </span>{{title}}</h5>
               <img src="{{asset "./image/arrowR.png"}}" class="arrow">
             </a>
           </div>

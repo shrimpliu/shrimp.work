@@ -547,3 +547,16 @@ p>img, .mobile {
     font-size: 8px;
   }
 }
+
+.post-tags {
+  display: inline-block;
+}
+
+.post-tags span {
+  color: #64B5F6;
+  font-size: 14px;
+}
+
+.post-tags span a {
+  color: #64B5F6;
+}
