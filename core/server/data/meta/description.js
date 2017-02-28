@@ -1,5 +1,5 @@
 var _ = require('lodash'),
-    htmlToText = require('html-to-text'),
+    getExcerpt = require('./excerpt'),
     config = require('../../config');
 
 function getDescription(data, root) {
@@ -20,9 +20,9 @@ function getDescription(data, root) {
         description = data.post.meta_description;
         //从内容中提取description
         if (!description && data.post.html) {
-            var text = htmlToText.fromString(data.post.html, {wordwrap: 156}).replace(/\n+/g, ' ');
-            text = text.replace(/\** +/g, ' ');
-            description = text.trim().substring(0, 156);
+            description = getExcerpt(data.post.html, {words: 156, round: true});
+            description = description.replace(/ +/g, ' ');
+            description = _.truncate(description.trim(), {length: 156});
         }
     }
 
