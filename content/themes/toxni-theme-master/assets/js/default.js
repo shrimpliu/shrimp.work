@@ -172,9 +172,9 @@
   //personal info
   ;(function () {
     var content = ''
-    var info = personalInfo
     var PIBox = document.getElementById('PIBox')
-    if (!!PIBox) {
+    if (!!PIBox && personalInfo) {
+        var info = personalInfo;
       document.getElementsByTagName('title')[0].innerText = 'About Me'
       for (var index in info) {
         var temp = '<p><span>' + index +': </span>' + info[index] +'</p>'
@@ -187,9 +187,9 @@
   //book list
   ;(function () {
     var content = ''
-    var books = personalBooks
     var bookBox = document.getElementById('bookBox')
-    if (!!bookBox) {
+    if (!!bookBox && personalBooks) {
+        var books = personalBooks
       for (var i = 0; i < books.length; i++) {
         var tempT = '<h3>' + books[i].name +'</h3>'
         var tempI = '<img src="' + books[i].image + '">'
@@ -209,9 +209,9 @@
   //game collection
   ;(function () {
     var content = ''
-    var games = personalGames
     var gameBox = document.getElementById('gameBox')
-    if (!!gameBox) {
+    if (!!gameBox && personalGames) {
+        var games = personalGames
       for (var i = 0; i < games.length; i++) {
         var tempT = '<h3>' + games[i].name +'</h3>'
         var tempI = '<img src="' + games[i].image + '">'
@@ -229,7 +229,7 @@
   })()
 
   //counter
-  ;(function (countName, countStart, isShown) {
+  /*;(function (countName, countStart, isShown) {
     var box = document.getElementsByClassName('countDown')[0]
     var countNameBox = document.getElementById('countName')
 
@@ -272,7 +272,7 @@
       timer()
       setInterval(timer, 1000)
     }
-  })(counter.countName, counter.countStart, counter.isShown)
+  })(counter.countName, counter.countStart, counter.isShown)*/
 
   //invisible style on mobiles
   ;(function () {
