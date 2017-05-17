@@ -259,9 +259,9 @@ p>img, .mobile {
   position: relative;
 }
 
-.menu:hover .toggleMenu {
+/*.menu:hover .toggleMenu {
   display: block;
-}
+}*/
 
 .toggleMenu {
   top: -300px;
@@ -410,9 +410,12 @@ p>img, .mobile {
     padding: 25px;
   }
 
-  .menu:hover .toggleMenu {
-    display: none;
+  .toggleMenu {
+    left: -120px;
   }
+  /*.menu:hover .toggleMenu {
+    display: none;
+  }*/
 
   .cas {
     display: none;
@@ -428,9 +431,9 @@ p>img, .mobile {
     max-width: 100%;
   }
 
-  pre {
-    #padding-left: 1em;
-  }
+  /*pre {
+    padding-left: 1em;
+  }*/
 
   .mobileOnly {
     display: block;
@@ -534,6 +537,7 @@ p>img, .mobile {
   .unit {
     font-size: 10px;
   }
+
 }
 
 @media (max-width: 360px) {
@@ -545,6 +549,10 @@ p>img, .mobile {
 
   .unit {
     font-size: 8px;
+  }
+
+  .toggleMenu {
+    display: none;
   }
 }
 
